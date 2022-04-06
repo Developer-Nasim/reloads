@@ -336,10 +336,19 @@ a.theme-btn.redBtn {
   width: 100%;
   height: 100%;
   z-index: -1;
+  opacity: .5;
+  transition: .3s;
   pointer-events: none;
   -webkit-user-drag: none;
 }
-
+.rewards_bottom.active img.background {
+  opacity: 1;
+} 
+.howto-area a.theme-btn {
+    background: #2dde32de;
+    transition: .3s !important;
+} 
+.howto-area a.theme-btn:hover {background: #2dde32;box-shadow: 5px 5px 15px -2px #2dde32;}
 .rewards_wrp {
   display: flex;
   align-items: center;
@@ -466,7 +475,7 @@ a.theme-btn.withArrow:hover {
 .bonus_blk > img {
     display: block;
     margin: auto;
-    width: max-content;
+    width: auto;
     height: 120px;
     position: relative;
     top: -40px;
@@ -684,7 +693,7 @@ ul.footer_social li a:hover {
   margin-top: 50px;
   font-weight: 400;
   text-transform: capitalize;
-  height: 50px;
+  height: 55px;
   border-radius: 5px;
   background: #2dde32;
   color: #000;
@@ -781,19 +790,20 @@ section.Giveaway-area:before {
     font-size: 20px;
     padding: 15px 85px;
     bottom: 3px;
-}
-
-.give_blk {}
-.gift_img {
-}
+} 
 
 .gift_img img {
+  max-width: 80px;
     position: absolute;
     animation: shaking 1s infinite;
   
 }
-.gift-left {left: 2%;bottom: 30px;}
-.gift-right {right: 2%;transform: rotate(45deg);}
+.gift-left {left: 0%;bottom: 30px;}
+.gift-right {
+  right: 0%;
+  transform: rotate(45deg);
+  top: 30%;
+}
 .give_blk {position: relative;max-width: 465px;padding-bottom: 30px;}
 
 .give_blk a {

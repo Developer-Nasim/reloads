@@ -54,6 +54,25 @@
       }
     }
   });
+
+  // hover
+  function HoverSection() {
+    let sectionChosenBtn = document.querySelectorAll('.hbrToLight') 
+    let rewardsbackg = document.querySelector('.rewards_bottom')
+
+    sectionChosenBtn.forEach(list => { 
+      list.addEventListener('click', (e) => { 
+        e.preventDefault();
+      })
+      list.addEventListener('mouseover', (e) => { 
+        rewardsbackg.classList.add('active')
+      })
+      list.addEventListener('mouseleave', (e) => { 
+        rewardsbackg.classList.remove('active')
+      })
+    });
+  }
+  HoverSection()
  
   
  
