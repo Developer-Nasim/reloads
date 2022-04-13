@@ -74,6 +74,18 @@
   }
   HoverSection()
  
+
+  // scroll_progress
+  function ScrollProgress() {
+    let Section = document.querySelector('.howto-area')
+    let mainBlk = document.querySelector('.all_steps')
+    let prgLine = document.querySelector('.prgLine')
+    window.addEventListener('scroll', (e) => {
+      prgLine.style.height = window.scrollY +"px"
+    })
+
+  }
+  ScrollProgress()
   
  
 })(jQuery);

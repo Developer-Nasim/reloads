@@ -361,14 +361,22 @@ a.theme-btn.redBtn {
 .rewards_img {
   position: relative;
   margin: 0 20px;
+  transition: .3s;
 }
 
 .rewards_img img.fire_img {
   position: absolute;
   bottom: -40px;
   left: -280px;
+  transition: .3s !important;
+}
+.rewards_bottom.active .rewards_content > img {
+  margin-left: 80px;
 }
 
+.rewards_bottom.active .rewards_img img.fire_img {
+  margin-left: -30px;
+}
 a.theme-btn.withArrow {
   z-index: 2;
   min-width: max-content;
@@ -400,6 +408,7 @@ a.theme-btn.withArrow:hover {
   display: block;
   margin-left: 50px;
   margin-top: 30px;
+  transition: .3s !important;
   animation: shaking 1s infinite;
   position: relative;
 }
@@ -520,6 +529,17 @@ ul.bonus_bottom li i.fas.fa-info-circle {
   z-index: 2;
   animation: shaking 3s infinite;
 }
+.rewards_img img.stack_img_small {
+  position: absolute;
+  top: 53%;
+  left: 17%;
+  max-width: 25%;
+  transform-origin: left;
+  transition: .3s;
+}
+.rewards_bottom.active .rewards_img img.stack_img_small {
+  transform: scale(1.6);
+}
 
 
 
@@ -618,7 +638,7 @@ ul.footer_social li a:hover {
 
 
 .howto-area {
-  padding: 200px 0 100px 0;
+  padding: 200px 0 140px 0;
   background-image: url(../img/howto_backg.png);
   background-size: cover;
   position: relative;
@@ -672,10 +692,19 @@ ul.footer_social li a:hover {
 }
 .all_steps {
   position: relative;
-  padding: 50px 0 100px 0;
+  overflow: hidden;
+  padding: 170px 0 100px 0;
   margin-top: 50px;
 }
-
+.all_steps .prgLine {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  background: white;
+  z-index: 2;
+  top: 0;
+  transform: translateX(-50%);
+}
 .all_steps:after {
   content: "";
   position: absolute;

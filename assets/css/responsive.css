@@ -246,8 +246,9 @@ margin-top: 30px;
         margin-top: 38px;
         text-align: center;
     }
-    .all_steps { 
-        padding: 50px 0 30px 0; 
+    .all_steps {  
+        padding: 0;
+        margin: 0;
     }
 
 
@@ -302,7 +303,14 @@ height: 230px;
 }
 /*====== Page 3 End========= */
 
+.rewards_bottom.active .rewards_content > img {
+    margin:auto;
+  }
 
+  .rewards_img {
+    max-width: 340px;
+    margin: auto;
+}
 
 
 
@@ -484,8 +492,9 @@ height: 230px;
         margin-top: 38px;
         text-align: center;
     }
-    .all_steps { 
-        padding: 50px 0 30px 0; 
+    .all_steps {  
+        padding: 0;
+        margin: 0;
     }
     .step_headings h3 {
         font-size: 30px;
@@ -621,6 +630,13 @@ margin-top: 30px;
 /*====== Page 3 End========= */
 
 
+.rewards_bottom.active .rewards_content > img {
+    margin:auto;
+  }
+  .rewards_img {
+    max-width: 180px;
+    margin: auto;
+}
  
 }
  
